@@ -1,0 +1,733 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B0FECA5D-1C32-4192-8AB4-116FD5C65E4D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PublishDatabaseSettings>
+      <Objects>
+      </Objects>
+    </PublishDatabaseSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="avisolegal.aspx" />
+    <Content Include="comocomprar.aspx" />
+    <Content Include="comprar.aspx" />
+    <Content Include="curso-ajedrez.aspx" />
+    <Content Include="curso-badminton.aspx" />
+    <Content Include="curso-balonmano.aspx" />
+    <Content Include="curso-biologia.aspx" />
+    <Content Include="curso-buceo.aspx" />
+    <Content Include="curso-damas.aspx" />
+    <Content Include="curso-fisica.aspx" />
+    <Content Include="curso-fotografia.aspx" />
+    <Content Include="curso-generico.aspx" />
+    <Content Include="curso-matematicas.aspx" />
+    <Content Include="curso-natacion.aspx" />
+    <Content Include="curso-photoshop.aspx" />
+    <Content Include="curso-quimica.aspx" />
+    <Content Include="cursos.aspx" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="identificarse.aspx" />
+    <Content Include="images\Ajedrez\01.jpg" />
+    <Content Include="images\Ajedrez\02.jpg" />
+    <Content Include="images\Ajedrez\03.jpg" />
+    <Content Include="images\Ajedrez\04.jpg" />
+    <Content Include="images\Ajedrez\imagen01.jpg" />
+    <Content Include="images\Ajedrez\imagen02.jpg" />
+    <Content Include="images\Ajedrez\imagen03.jpg" />
+    <Content Include="images\Ajedrez\imagen04.jpg" />
+    <Content Include="images\avatar.png" />
+    <Content Include="images\avatar02.png.jpg" />
+    <Content Include="images\Badminton\01.jpg" />
+    <Content Include="images\Badminton\02.jpg" />
+    <Content Include="images\Badminton\03.jpg" />
+    <Content Include="images\Badminton\04.jpg" />
+    <Content Include="images\Badminton\imagen01.jpg" />
+    <Content Include="images\Badminton\imagen03.jpg" />
+    <Content Include="images\Badminton\imagen04.jpg" />
+    <Content Include="images\Badminton\imagen10.jpg" />
+    <Content Include="images\Balonmano\01.jpg" />
+    <Content Include="images\Balonmano\02.jpg" />
+    <Content Include="images\Balonmano\03.jpg" />
+    <Content Include="images\Balonmano\04.jpg" />
+    <Content Include="images\Balonmano\imagen01.jpg" />
+    <Content Include="images\Balonmano\imagen02.jpg" />
+    <Content Include="images\Balonmano\imagen03.jpg" />
+    <Content Include="images\Balonmano\imagen04.jpg" />
+    <Content Include="images\biologia\01.jpg" />
+    <Content Include="images\biologia\02.jpg" />
+    <Content Include="images\biologia\03.jpg" />
+    <Content Include="images\biologia\04.jpg" />
+    <Content Include="images\buceo\01.jpg" />
+    <Content Include="images\buceo\02.jpg" />
+    <Content Include="images\buceo\03.jpg" />
+    <Content Include="images\buceo\04.jpg" />
+    <Content Include="images\Damas\01.jpg" />
+    <Content Include="images\Damas\02.jpg" />
+    <Content Include="images\Damas\03.jpg" />
+    <Content Include="images\Damas\04.jpg" />
+    <Content Include="images\Damas\imagen01.jpg" />
+    <Content Include="images\Damas\imagen02.jpg" />
+    <Content Include="images\Damas\imagen03.jpg" />
+    <Content Include="images\Damas\imagen04.jpg" />
+    <Content Include="images\fisica\01.jpg" />
+    <Content Include="images\fisica\02.jpg" />
+    <Content Include="images\fisica\03.jpg" />
+    <Content Include="images\fisica\04.jpg" />
+    <Content Include="images\Fotografia\01.jpg" />
+    <Content Include="images\Fotografia\02.jpg" />
+    <Content Include="images\Fotografia\03.jpg" />
+    <Content Include="images\Fotografia\04.jpg" />
+    <Content Include="images\Fotografia\imagen01.jpg" />
+    <Content Include="images\Fotografia\imagen02.jpg" />
+    <Content Include="images\Fotografia\imagen03.jpg" />
+    <Content Include="images\Fotografia\imagen04.jpg" />
+    <Content Include="images\GIF\photothumb.db" />
+    <Content Include="images\GIF\Thumbs.db" />
+    <Content Include="images\iconos\01.png" />
+    <Content Include="images\iconos\02.png" />
+    <Content Include="images\iconos\03.png" />
+    <Content Include="images\iconos\04.png" />
+    <Content Include="images\iconos\05.png" />
+    <Content Include="images\iconos\06.png" />
+    <Content Include="images\iconos\07.png" />
+    <Content Include="images\iconos\08.png" />
+    <Content Include="images\iconos\09.png" />
+    <Content Include="images\iconos\10.png" />
+    <Content Include="images\iconos\11.png" />
+    <Content Include="images\iconos\12.png" />
+    <Content Include="images\iconos\alumnos01.png" />
+    <Content Include="images\iconos\aprovechar %281%29.png" />
+    <Content Include="images\iconos\aprovechar %282%29.png" />
+    <Content Include="images\iconos\aprovechar.png" />
+    <Content Include="images\iconos\barra01.png" />
+    <Content Include="images\iconos\barra02 %282%29.png" />
+    <Content Include="images\iconos\barra02 %283%29.png" />
+    <Content Include="images\iconos\barra02.png" />
+    <Content Include="images\iconos\barra03.png" />
+    <Content Include="images\iconos\bolsa-de-supermercado %281%29.png" />
+    <Content Include="images\iconos\bolsa-de-supermercado %282%29.png" />
+    <Content Include="images\iconos\bolsa-de-supermercado.png" />
+    <Content Include="images\iconos\carrito-de-la-compra %281%29.png" />
+    <Content Include="images\iconos\carrito-de-la-compra %282%29.png" />
+    <Content Include="images\iconos\carrito-de-la-compra %283%29.png" />
+    <Content Include="images\iconos\carrito-de-la-compra.png" />
+    <Content Include="images\iconos\carrito01.png" />
+    <Content Include="images\iconos\carrito02.png" />
+    <Content Include="images\iconos\carrito03.png" />
+    <Content Include="images\iconos\carrito04.png" />
+    <Content Include="images\iconos\carrito05.png" />
+    <Content Include="images\iconos\carrito06.png" />
+    <Content Include="images\iconos\carrito07.png" />
+    <Content Include="images\iconos\carrito08.png" />
+    <Content Include="images\iconos\carrito09.png" />
+    <Content Include="images\iconos\cursos01.png" />
+    <Content Include="images\iconos\dato01.png" />
+    <Content Include="images\iconos\dato02.png" />
+    <Content Include="images\iconos\dato03.png" />
+    <Content Include="images\iconos\estrella01.png" />
+    <Content Include="images\iconos\estrella02.png" />
+    <Content Include="images\iconos\estrella03.png" />
+    <Content Include="images\iconos\estrella07.png" />
+    <Content Include="images\iconos\estrella08.png" />
+    <Content Include="images\iconos\estrella09.png" />
+    <Content Include="images\iconos\formulario.png" />
+    <Content Include="images\iconos\home01.png" />
+    <Content Include="images\iconos\icon %281%29.png" />
+    <Content Include="images\iconos\icon.png" />
+    <Content Include="images\iconos\logout.png" />
+    <Content Include="images\iconos\mas01.png" />
+    <Content Include="images\iconos\orden-de-compra %281%29.png" />
+    <Content Include="images\iconos\orden-de-compra %282%29.png" />
+    <Content Include="images\iconos\orden-de-compra %283%29.png" />
+    <Content Include="images\iconos\orden-de-compra.png" />
+    <Content Include="images\iconos\puntos01.png" />
+    <Content Include="images\iconos\puntos02.png" />
+    <Content Include="images\iconos\puntos03.png" />
+    <Content Include="images\Matematicas\01.jpg" />
+    <Content Include="images\Matematicas\02.jpg" />
+    <Content Include="images\Matematicas\03.jpg" />
+    <Content Include="images\Matematicas\04.jpg" />
+    <Content Include="images\Matematicas\imagen01.jpg" />
+    <Content Include="images\Matematicas\imagen02.jpg" />
+    <Content Include="images\Matematicas\imagen03.jpg" />
+    <Content Include="images\Matematicas\imagen04.jpg" />
+    <Content Include="images\natacion\01.jpg" />
+    <Content Include="images\natacion\02.jpg" />
+    <Content Include="images\natacion\03.jpg" />
+    <Content Include="images\natacion\04.jpg" />
+    <Content Include="images\Photoshop\01.jpg" />
+    <Content Include="images\Photoshop\02.jpg" />
+    <Content Include="images\Photoshop\03.jpg" />
+    <Content Include="images\Photoshop\04.jpg" />
+    <Content Include="images\Photoshop\imagen01.jpg" />
+    <Content Include="images\Photoshop\imagen02.jpg" />
+    <Content Include="images\Photoshop\imagen03.jpg" />
+    <Content Include="images\Photoshop\imagen04.jpg" />
+    <Content Include="images\photothumb.db" />
+    <Content Include="images\Quimica\01.jpg" />
+    <Content Include="images\Quimica\02.jpg" />
+    <Content Include="images\Quimica\03.jpg" />
+    <Content Include="images\Quimica\04.jpg" />
+    <Content Include="images\Quimica\imagen01.jpg" />
+    <Content Include="images\Quimica\imagen02.jpg" />
+    <Content Include="images\Quimica\imagen03.jpg" />
+    <Content Include="images\Quimica\imagen04.jpg" />
+    <Content Include="images\separador02.png" />
+    <Content Include="images\separador03.png" />
+    <Content Include="images\Thumbs.db" />
+    <Content Include="images\title01-secuencia09.png" />
+    <Content Include="images\title01.png" />
+    <Content Include="images\tutorial\00.PNG" />
+    <Content Include="images\tutorial\01.PNG" />
+    <Content Include="images\tutorial\02.PNG" />
+    <Content Include="images\tutorial\03.PNG" />
+    <Content Include="images\tutorial\04.PNG" />
+    <Content Include="images\tutorial\05.PNG" />
+    <Content Include="images\tutorial\Originals\01.PNG" />
+    <Content Include="images\tutorial\Originals\02.PNG" />
+    <Content Include="images\tutorial\Originals\03.PNG" />
+    <Content Include="img\iden8.png" />
+    <Content Include="img\Thumbs.db" />
+    <Content Include="img\usuario %286%29.png" />
+    <Content Include="img\usuario %287%29.png" />
+    <Content Include="inicio.aspx" />
+    <Content Include="legal.aspx" />
+    <Content Include="Master1.Master" />
+    <Content Include="images\Ajedrez\Thumbs.db" />
+    <Content Include="images\Badminton\Thumbs.db" />
+    <Content Include="images\Balonmano\Thumbs.db" />
+    <Content Include="images\biologia\Thumbs.db" />
+    <Content Include="images\buceo\Thumbs.db" />
+    <Content Include="images\Damas\Thumbs.db" />
+    <Content Include="images\fisica\Thumbs.db" />
+    <Content Include="images\Fotografia\Thumbs.db" />
+    <Content Include="images\iconos\Thumbs.db" />
+    <Content Include="images\Matematicas\Thumbs.db" />
+    <Content Include="images\natacion\Thumbs.db" />
+    <Content Include="images\Photoshop\Thumbs.db" />
+    <Content Include="images\Quimica\Thumbs.db" />
+    <Content Include="images\tutorial\Originals\Thumbs.db" />
+    <Content Include="images\tutorial\photothumb.db" />
+    <Content Include="images\tutorial\Thumbs.db" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\ie\backgroundsize.min.htc" />
+    <Content Include="css\ie\html5shiv.js" />
+    <Content Include="css\ie\v8.css" />
+    <Content Include="css\skel.css" />
+    <Content Include="css\style-mobile.css" />
+    <Content Include="css\style-narrow.css" />
+    <Content Include="css\style-narrower.css" />
+    <Content Include="css\style-normal.css" />
+    <Content Include="css\style-wide.css" />
+    <Content Include="css\style.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\cat-1.png" />
+    <Content Include="images\cursos01.PNG" />
+    <Content Include="images\fondo01.jpg" />
+    <Content Include="images\fondo02.png" />
+    <Content Include="images\GIF\title-animado.gif" />
+    <Content Include="images\GIF\title01-secuencia.png" />
+    <Content Include="images\GIF\title01-secuencia01.png" />
+    <Content Include="images\GIF\title01-secuencia02.png" />
+    <Content Include="images\GIF\title01-secuencia03.png" />
+    <Content Include="images\GIF\title01-secuencia04.png" />
+    <Content Include="images\GIF\title01-secuencia05.png" />
+    <Content Include="images\GIF\title01-secuencia06.png" />
+    <Content Include="images\GIF\title01-secuencia07.png" />
+    <Content Include="images\GIF\title01-secuencia08.png" />
+    <Content Include="images\imagen01.jpg" />
+    <Content Include="images\imagen02.jpg" />
+    <Content Include="images\imagen03.jpg" />
+    <Content Include="images\imagen04.jpg" />
+    <Content Include="images\imagen05.jpg" />
+    <Content Include="images\imagen06.jpg" />
+    <Content Include="images\imagen07.jpg" />
+    <Content Include="images\imagen08.jpg" />
+    <Content Include="images\imagen09.jpg" />
+    <Content Include="images\imagen10.jpg" />
+    <Content Include="images\imagen11.jpg" />
+    <Content Include="images\imagen12.jpg" />
+    <Content Include="images\meditation.png" />
+    <Content Include="images\octopus.png" />
+    <Content Include="images\oferta01.PNG" />
+    <Content Include="images\ofertas01.png" />
+    <Content Include="images\pack01.png" />
+    <Content Include="images\pack02.png" />
+    <Content Include="images\pack03.png" />
+    <Content Include="images\pack04.png" />
+    <Content Include="images\pack05.png" />
+    <Content Include="images\pack06.png" />
+    <Content Include="images\pic01.jpg" />
+    <Content Include="images\pic02.jpg" />
+    <Content Include="images\pic03.jpg" />
+    <Content Include="images\pic04.jpg" />
+    <Content Include="images\pirate.png" />
+    <Content Include="images\separador01.png" />
+    <Content Include="images\title-animado01.gif" />
+    <Content Include="images\title01-secuencia01.png" />
+    <Content Include="images\title01-secuencia02.png" />
+    <Content Include="images\title01-secuencia03.png" />
+    <Content Include="images\title01-secuencia04.png" />
+    <Content Include="images\title01-secuencia05.png" />
+    <Content Include="images\title01-secuencia06.png" />
+    <Content Include="images\title01-secuencia07.png" />
+    <Content Include="images\title01-secuencia08.png" />
+    <Content Include="images\title0111.png" />
+    <Content Include="images\titulo00.png" />
+    <Content Include="images\titulo01.png" />
+    <Content Include="images\whale.png" />
+    <Content Include="img\002.jpg" />
+    <Content Include="img\003.jpg" />
+    <Content Include="img\004.jpg" />
+    <Content Include="img\005.jpg" />
+    <Content Include="img\006.jpg" />
+    <Content Include="img\007.jpg" />
+    <Content Include="img\008.jpg" />
+    <Content Include="img\009.jpg" />
+    <Content Include="img\010.jpg" />
+    <Content Include="img\011.jpg" />
+    <Content Include="img\02.jpg" />
+    <Content Include="img\04.jpg" />
+    <Content Include="img\05.jpg" />
+    <Content Include="img\09.jpg" />
+    <Content Include="img\a02.png" />
+    <Content Include="img\a12.png" />
+    <Content Include="img\b05.png" />
+    <Content Include="img\carrito01.png" />
+    <Content Include="img\icon_chrome.png" />
+    <Content Include="img\iden1.png" />
+    <Content Include="img\iden2.png" />
+    <Content Include="img\iden3.png" />
+    <Content Include="img\iden4.png" />
+    <Content Include="img\iden5.png" />
+    <Content Include="img\iden6.png" />
+    <Content Include="img\iden7.png" />
+    <Content Include="img\loading.gif" />
+    <Content Include="img\lupa01.png" />
+    <Content Include="img\lupa02.png" />
+    <Content Include="img\lupa03.png" />
+    <Content Include="img\lupa04.png" />
+    <Content Include="img\lupa05.png" />
+    <Content Include="img\lupa06.png" />
+    <Content Include="img\lupa07.png" />
+    <Content Include="img\lupa08.png" />
+    <Content Include="img\lupa09.png" />
+    <Content Include="js\init.js" />
+    <Content Include="js\jquery.dropotron.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\skel-layers.min.js" />
+    <Content Include="js\skel.min.js" />
+    <Content Include="micarrito.aspx" />
+    <Content Include="micuenta.aspx" />
+    <Content Include="mipasseditar.aspx" />
+    <Content Include="misdatos.aspx" />
+    <Content Include="misdatoseditar.aspx" />
+    <Content Include="mispedidos.aspx" />
+    <Content Include="mispuntos.aspx" />
+    <Content Include="misreservas.aspx" />
+    <Content Include="oferta-ajedrezdamas.aspx" />
+    <Content Include="oferta-badminbalon.aspx" />
+    <Content Include="oferta-biologiaquimica.aspx" />
+    <Content Include="oferta-buceonatacion.aspx" />
+    <Content Include="oferta-fotophotoshop.aspx" />
+    <Content Include="oferta-matefisica.aspx" />
+    <Content Include="ofertas.aspx" />
+    <Content Include="privacidad.aspx" />
+    <Content Include="puntos.aspx" />
+    <Content Include="quienes.aspx" />
+    <Content Include="registro.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="avisolegal.aspx.cs">
+      <DependentUpon>avisolegal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="avisolegal.aspx.designer.cs">
+      <DependentUpon>avisolegal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="comocomprar.aspx.cs">
+      <DependentUpon>comocomprar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="comocomprar.aspx.designer.cs">
+      <DependentUpon>comocomprar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="comprar.aspx.cs">
+      <DependentUpon>comprar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="comprar.aspx.designer.cs">
+      <DependentUpon>comprar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="curso-ajedrez.aspx.cs">
+      <DependentUpon>curso-ajedrez.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="curso-ajedrez.aspx.designer.cs">
+      <DependentUpon>curso-ajedrez.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="curso-badminton.aspx.cs">
+      <DependentUpon>curso-badminton.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="curso-badminton.aspx.designer.cs">
+      <DependentUpon>curso-badminton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="curso-balonmano.aspx.cs">
+      <DependentUpon>curso-balonmano.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="curso-balonmano.aspx.designer.cs">
+      <DependentUpon>curso-balonmano.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="curso-biologia.aspx.cs">
+      <DependentUpon>curso-biologia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="curso-biologia.aspx.designer.cs">
+      <DependentUpon>curso-biologia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="curso-buceo.aspx.cs">
+      <DependentUpon>curso-buceo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="curso-buceo.aspx.designer.cs">
+      <DependentUpon>curso-buceo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="curso-damas.aspx.cs">
+      <DependentUpon>curso-damas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="curso-damas.aspx.designer.cs">
+      <DependentUpon>curso-damas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="curso-fisica.aspx.cs">
+      <DependentUpon>curso-fisica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="curso-fisica.aspx.designer.cs">
+      <DependentUpon>curso-fisica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="curso-fotografia.aspx.cs">
+      <DependentUpon>curso-fotografia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="curso-fotografia.aspx.designer.cs">
+      <DependentUpon>curso-fotografia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="curso-generico.aspx.cs">
+      <DependentUpon>curso-generico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="curso-generico.aspx.designer.cs">
+      <DependentUpon>curso-generico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="curso-matematicas.aspx.cs">
+      <DependentUpon>curso-matematicas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="curso-matematicas.aspx.designer.cs">
+      <DependentUpon>curso-matematicas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="curso-natacion.aspx.cs">
+      <DependentUpon>curso-natacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="curso-natacion.aspx.designer.cs">
+      <DependentUpon>curso-natacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="curso-photoshop.aspx.cs">
+      <DependentUpon>curso-photoshop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="curso-photoshop.aspx.designer.cs">
+      <DependentUpon>curso-photoshop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="curso-quimica.aspx.cs">
+      <DependentUpon>curso-quimica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="curso-quimica.aspx.designer.cs">
+      <DependentUpon>curso-quimica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cursos.aspx.cs">
+      <DependentUpon>cursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cursos.aspx.designer.cs">
+      <DependentUpon>cursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="identificarse.aspx.cs">
+      <DependentUpon>identificarse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="identificarse.aspx.designer.cs">
+      <DependentUpon>identificarse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inicio.aspx.cs">
+      <DependentUpon>inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inicio.aspx.designer.cs">
+      <DependentUpon>inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="legal.aspx.cs">
+      <DependentUpon>legal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="legal.aspx.designer.cs">
+      <DependentUpon>legal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master1.Master.cs">
+      <DependentUpon>Master1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master1.Master.designer.cs">
+      <DependentUpon>Master1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="micarrito.aspx.cs">
+      <DependentUpon>micarrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="micarrito.aspx.designer.cs">
+      <DependentUpon>micarrito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="micuenta.aspx.cs">
+      <DependentUpon>micuenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="micuenta.aspx.designer.cs">
+      <DependentUpon>micuenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mipasseditar.aspx.cs">
+      <DependentUpon>mipasseditar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mipasseditar.aspx.designer.cs">
+      <DependentUpon>mipasseditar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="misdatos.aspx.cs">
+      <DependentUpon>misdatos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="misdatos.aspx.designer.cs">
+      <DependentUpon>misdatos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="misdatoseditar.aspx.cs">
+      <DependentUpon>misdatoseditar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="misdatoseditar.aspx.designer.cs">
+      <DependentUpon>misdatoseditar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mispedidos.aspx.cs">
+      <DependentUpon>mispedidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mispedidos.aspx.designer.cs">
+      <DependentUpon>mispedidos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mispuntos.aspx.cs">
+      <DependentUpon>mispuntos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mispuntos.aspx.designer.cs">
+      <DependentUpon>mispuntos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="misreservas.aspx.cs">
+      <DependentUpon>misreservas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="misreservas.aspx.designer.cs">
+      <DependentUpon>misreservas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oferta-ajedrezdamas.aspx.cs">
+      <DependentUpon>oferta-ajedrezdamas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oferta-ajedrezdamas.aspx.designer.cs">
+      <DependentUpon>oferta-ajedrezdamas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oferta-badminbalon.aspx.cs">
+      <DependentUpon>oferta-badminbalon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oferta-badminbalon.aspx.designer.cs">
+      <DependentUpon>oferta-badminbalon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oferta-biologiaquimica.aspx.cs">
+      <DependentUpon>oferta-biologiaquimica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oferta-biologiaquimica.aspx.designer.cs">
+      <DependentUpon>oferta-biologiaquimica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oferta-buceonatacion.aspx.cs">
+      <DependentUpon>oferta-buceonatacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oferta-buceonatacion.aspx.designer.cs">
+      <DependentUpon>oferta-buceonatacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oferta-fotophotoshop.aspx.cs">
+      <DependentUpon>oferta-fotophotoshop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oferta-fotophotoshop.aspx.designer.cs">
+      <DependentUpon>oferta-fotophotoshop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oferta-matefisica.aspx.cs">
+      <DependentUpon>oferta-matefisica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oferta-matefisica.aspx.designer.cs">
+      <DependentUpon>oferta-matefisica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ofertas.aspx.cs">
+      <DependentUpon>ofertas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ofertas.aspx.designer.cs">
+      <DependentUpon>ofertas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="privacidad.aspx.cs">
+      <DependentUpon>privacidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="privacidad.aspx.designer.cs">
+      <DependentUpon>privacidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="puntos.aspx.cs">
+      <DependentUpon>puntos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="puntos.aspx.designer.cs">
+      <DependentUpon>puntos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="quienes.aspx.cs">
+      <DependentUpon>quienes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="quienes.aspx.designer.cs">
+      <DependentUpon>quienes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="registro.aspx.cs">
+      <DependentUpon>registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registro.aspx.designer.cs">
+      <DependentUpon>registro.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HadaWeb\HadaWeb.csproj">
+      <Project>{e1779d9a-9c9e-4d61-aec1-dfb3af882cb3}</Project>
+      <Name>HadaWeb</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55603</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55603/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

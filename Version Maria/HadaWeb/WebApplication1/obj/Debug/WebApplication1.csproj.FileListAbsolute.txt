@@ -1,0 +1,8 @@
+C:\Users\Kvoths\Desktop\Modificado\HadaWeb\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\Kvoths\Desktop\Modificado\HadaWeb\WebApplication1\bin\WebApplication1.dll
+C:\Users\Kvoths\Desktop\Modificado\HadaWeb\WebApplication1\bin\WebApplication1.pdb
+C:\Users\Kvoths\Desktop\Modificado\HadaWeb\WebApplication1\bin\HadaWeb.dll
+C:\Users\Kvoths\Desktop\Modificado\HadaWeb\WebApplication1\bin\HadaWeb.pdb
+C:\Users\Kvoths\Desktop\Modificado\HadaWeb\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Kvoths\Desktop\Modificado\HadaWeb\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\Kvoths\Desktop\Modificado\HadaWeb\WebApplication1\obj\Debug\WebApplication1.pdb

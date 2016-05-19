@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master1.master.cs" Inherits="WebApplication1.Master1" %>
+
+<!DOCTYPE html>
+<!-- Master de donde derivan el resto de paginas, aqui introduciremos el menu superior y asi nos evitamos tener que reescribirlo en todas las paginas -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+   	<title>SERVIRENT</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" runat="server" />
+			<link rel="stylesheet" href="css/style.css" runat="server" />
+			<link rel="stylesheet" href="css/style-wide.css" runat="server"/>
+		</noscript>
+</head>
+<body>
+    <form id="form1" runat="server" style="width:100%; height:100%;">
+   
+       <div class="wrapper style1">
+
+				<!-- Header -->
+					<div id="header" class="skel-panels-fixed">
+						<div id="logo">
+                            <img src="images/meditation.png" width="20" height="20"/>
+							<h1><a href="inicio.aspx" runat="server">SERVIRENT</a></h1>
+							<span class="tag">by Hada team</span>
+						</div>
+						<nav id="nav">
+							<ul>
+						        <li class="active"><a href="inicio.aspx">Inicio</a></li>
+						        <li><a href="cursos.aspx" runat="server">Cursos</a></li>
+                                <li><a href="ofertas.aspx" runat="server">Ofertas</a></li>
+                                <li><a href="comocomprar.aspx" runat="server">Cómo comprar</a></li>
+						        <li><a href="quienes.aspx" runat="server">Quiénes somos</a></li>
+                                <li><a href="avisolegal.aspx" runat="server">Aviso legal</a></li>
+                                <li>|</li>
+                                <img src="images/iconos/barra02.png"/><li class="active"><a href="identificarse.aspx" runat="server">Identifícate</a></li>
+                                <img src="images/iconos/carrito07.png"/><li class="active"><a href="micarrito.aspx" runat="server">Carrito</a></li>
+                                <img src="images/iconos/barra02.png"/><li class="active"><a href="micuenta.aspx" runat="server">Mi cuenta</a></li>
+                                <img src="images/iconos/logout.png"/><li class="active"><a href="identificarse.aspx" runat="server">Cerrar sesión</a></li>
+
+                                <!-- Traductor google -->
+                                <p></p>
+								<div id="google_translate_element"></div>
+                                <!-- Script proporcionado por google para poder traducir la pagina web -->
+							    <script type="text/javascript">
+							        function googleTranslateElementInit() {
+							            new google.translate.TranslateElement({ pageLanguage: 'es' }, 'google_translate_element');
+							        }
+					            </script> <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript">
+					            </script>
+
+							</ul>
+						</nav>
+					</div>
+            
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <!-- FIXME se dejara vacio, luego al generar archivos.aspx que deriven de aqui sera donde se escriba... -->
+        </asp:ContentPlaceHolder>
+    </div>
+        </form>
+</body>
+</html>
